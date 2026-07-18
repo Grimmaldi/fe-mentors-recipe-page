@@ -64,6 +64,7 @@ h2 {
 .prep-time h2 {
     color: var(--Rose800);
     margin-top: 0rem;
+    font-size: 1.2rem;
 }
 
 .container {
@@ -82,12 +83,14 @@ h2 {
 }
 
 li {
-    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
 }
 
 li::marker {
+    padding-right: 4rem;
     color: var(--Brown800);
-    padding-right: 1rem;
 }
 
 aside li::marker {
@@ -96,11 +99,50 @@ aside li::marker {
 
 aside {
     background-color: var(--Rose50);
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     margin-top: 2rem;
 }
 
 p {
     margin-top: 1rem;
+}
+
+ol, ul {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+table {
+    width: 43rem;
+    margin-top: 1rem;
+    border-collapse:collapse;
+}
+
+.nutritional-table tbody tr {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.nutritional-table tbody tr td, .nutritional-table tbody tr th {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.nutritional-table tbody tr:not(:last-child) {
+    border-bottom-style: solid;
+    border-bottom-color: var(--Stone150);
+    border-bottom-width: 1px;
+    padding-top: 1rem;
+}
+
+table tr th {
+    font-weight: normal;
+    text-align: left;
+}
+
+table tr td {
+    font-weight: bold;
+    color: var(--Brown800);
+    text-align: left;
 }
